@@ -6,12 +6,12 @@ import android.os.Bundle;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class CaptialActivity extends AppCompatActivity {
+public class CapitalActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_captial);
+        setContentView(R.layout.activity_capital);
 
         TextView tvText = findViewById(R.id.tvText);
         Bundle bundle = getIntent().getExtras();

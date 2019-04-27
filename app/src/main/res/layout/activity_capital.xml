@@ -4,15 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".CapitalActivity"
+    android:orientation="vertical">
 
-    <ListView
+
+
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/countriesList"
-        >
-
-    </ListView>
+        android:id="@+id/tvText"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        />
 
 </LinearLayout>
