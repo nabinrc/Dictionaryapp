@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class DashBoard extends AppCompatActivity {
-    Button btnOpenDictionary,btnOpenCountry,btnCallme;
+    Button btnOpenDictionary,btnOpenCountry,btnCallme, btnLogin, btnRegister;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -16,6 +16,8 @@ public class DashBoard extends AppCompatActivity {
         btnOpenCountry = findViewById(R.id.btnOpenCountry);
         btnOpenDictionary = findViewById(R.id.btnOpenDictionary);
         btnCallme = findViewById(R.id.btnCallme);
+        btnLogin = findViewById(R.id.btnLogin);
+        btnRegister= findViewById(R.id.btnRegister);
 
         btnOpenDictionary.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,6 +39,22 @@ public class DashBoard extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(DashBoard.this, DialActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnRegister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DashBoard.this, RegisterActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DashBoard.this, LoginActivity.class);
                 startActivity(intent);
             }
         });
